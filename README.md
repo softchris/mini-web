@@ -6,9 +6,8 @@
 ## Table of Contents
 
 - [About](#about)
-- [Features](#features)
 - [Install](#install)
-- [Run](#run)
+- [Features](#features)
 - [Create an app](#create-an-app)
 
 ## About
@@ -16,6 +15,12 @@
 This is a minimalistic Web framework for Node.js. It helps you create RESTful APIs.
 
 The idea is to have 0 dependencies while still have all the functionality you would expect from bigger frameworks like Express, Koa, Fastify etc with just a fraction of the footprint.
+
+## Install
+
+```bash
+npm install quarkhttp
+```
 
 ## Features
 
@@ -49,11 +54,10 @@ The idea is to have 0 dependencies while still have all the functionality you wo
    ```javascript
    app.get('/products/:id', (req, res) => {
      console.log(req.params) // for route /products/1 { id: "1" }
-     console.log(req.query) // for route /products?page=1&pageSize=20 { page: "1", pageSize: "20"}
    })
    ```
 
-   **Query parameters** 
+   **Query parameters**
 
    ```javascript
    app.get('/products/', (req, res) => {
@@ -61,18 +65,12 @@ The idea is to have 0 dependencies while still have all the functionality you wo
    })
    ```
 
-## Install
-
-```
-npm install mini-web
-```
-
 ## Create an app
 
 ```javascript
-const miniweb = require('quarkhttp');
+const quark = require('quarkhttp');
 
-const app = miniweb();
+const app = quark();
 
 // ROUTE PARAMETERS
 app.get("/products/:id", (req, res) => {
@@ -88,6 +86,12 @@ app.get('/products', (req, res) => {
 
 // POST
 app.post('/products', (req,res) => {
+  console.info('body', req.body)
+  res.json(req.body);
+})
+
+// PUT
+app.put('/products', (req,res) => {
   console.info('body', req.body)
   res.json(req.body);
 })
