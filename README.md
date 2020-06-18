@@ -1,5 +1,7 @@
 [![The MIT License](https://img.shields.io/badge/license-MIT-orange.svg?color=blue&style=flat-square)](http://opensource.org/licenses/MIT)
 ![Coverage](./badges/coverage.svg)
+[![npm version](https://badge.fury.io/js/quarkhttp.svg)](https://www.npmjs.com/package/quarkhttp)
+[![npm downloads](https://img.shields.io/npm/dm/quarkhttp?color=blue&label=npm%20downloads&style=flat-square)](https://www.npmjs.com/package/quarkhttp)
 
 ## Table of Contents
 

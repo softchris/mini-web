@@ -1,6 +1,6 @@
 {
   "name": "quarkhttp",
-  "version": "0.8.2",
+  "version": "0.8.3",
   "engines": {
     "node": ">=10.0.0"
   },
@@ -48,6 +48,14 @@
       "url": "https://softchris.github.io"
     }
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/softchris/mini-web.git"
+  },
+  "homepage": "https://github.com/softchris/mini-web",
+  "bugs": {
+    "url": "https://github.com/softchris/mini-web/issues"
+  },
   "license": "MIT",
   "dependencies": {},
   "devDependencies": {
