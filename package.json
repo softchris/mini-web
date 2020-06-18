@@ -1,9 +1,16 @@
 {
   "name": "quarkhttp",
-  "version": "0.8.1",
+  "version": "0.8.2",
   "engines": {
     "node": ">=10.0.0"
   },
+  "files": [
+    "README.md",
+    "index.js",
+    "src/app.js",
+    "src/query-params.js",
+    "src/url-to-regex.js"
+  ],
   "description": "Minimalistic web framework with 0 dependencies",
   "main": "./src/app.js",
   "scripts": {
