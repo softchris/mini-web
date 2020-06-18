@@ -1,0 +1,55 @@
+{
+  "name": "mini-web",
+  "version": "0.8.0",
+  "engines": {
+    "node": ">=10.0.0"
+  },
+  "description": "Minimalistic web framework with 0 dependencies",
+  "main": "./src/app.js",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watchAll",
+    "test:coverage": "jest --coverage",
+    "premake-badge": "$(npm bin)/jest --coverage",
+    "make-badge": "$(npm bin)/coverage-badges",
+    "toc": "npx markdown-toc README.md",
+    "lint": "npx eslint ./src/**"
+  },
+  "jest": {
+    "coverageReporters": [
+      "text",
+      "lcov",
+      "json-summary",
+      "cobertura"
+    ]
+  },
+  "keywords": [
+    "mini-web",
+    "framework",
+    "web",
+    "http",
+    "rest",
+    "restful",
+    "router",
+    "app",
+    "api"
+  ],
+  "author": "Chris Noring (https://softchris.github.io)",
+  "contributors": [
+    {
+      "name": "chris noring",
+      "url": "https://softchris.github.io"
+    }
+  ],
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "jest": "^26.0.1",
+    "supertest": "^4.0.2",
+    "coverage-badges": "^1.0.4",
+    "eslint": "^7.0.0",
+    "eslint-plugin-jest": "^23.13.1",
+    "eslint-plugin-node": "^11.1.0",
+    "markdown-toc": "^1.2.0"
+  }
+}

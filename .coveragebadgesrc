@@ -1,0 +1,4 @@
+{
+  "source": "./coverage/coverage-summary.json",
+  "attribute": "total.statements.pct"
+}
