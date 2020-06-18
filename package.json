@@ -1,6 +1,6 @@
 {
-  "name": "mini-web",
-  "version": "0.8.0",
+  "name": "quarkhttp",
+  "version": "0.8.1",
   "engines": {
     "node": ">=10.0.0"
   },

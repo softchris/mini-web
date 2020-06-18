@@ -65,10 +65,10 @@ The idea is to have 0 dependencies while still have all the functionality you wo
 npm install mini-web
 ```
 
-## Create an app
+## Create an app
 
 ```javascript
-const miniweb = require('mini-web');
+const miniweb = require('quarkhttp');
 
 const app = miniweb();
 
